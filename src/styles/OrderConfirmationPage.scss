@@ -1,0 +1,46 @@
+
+.order-confirmation-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+  }
+  
+  .confirmation-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #333;
+  }
+  
+  .shipping-details-box {
+    width: 60%;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 20px;
+  }
+  
+  .shipping-details-box h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .shipping-details-content {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .shipping-details-content p {
+    margin: 5px 0;
+  }
+  
+  .shipping-details-content strong {
+    font-weight: bold;
+  }
+  
