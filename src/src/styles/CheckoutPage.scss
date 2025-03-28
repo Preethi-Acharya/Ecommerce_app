@@ -1,0 +1,115 @@
+/* CheckoutPage.scss */
+
+.checkout-page {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .left-section {
+    width: 60%;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column; /* Ensures boxes are stacked vertically */
+  }
+  
+  .right-section {
+    width: 35%;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .box {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border-radius: 8px;
+    width: 100%; /* Ensures each box takes up the full width of the parent */
+  }
+  
+  .box h3 {
+    margin-top: 0;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .box-content {
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+  }
+  
+  .item-summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .edit-bag {
+    color: #007bff;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  
+  .item-image {
+    margin-top: 10px;
+    display: flex;
+    justify-content: left;
+  }
+  
+  .item-image img {
+    width: 100%;
+    height: auto;
+    max-width: 20%;
+    max-height: 20%;
+    object-fit: cover;
+  }
+  
+  .right-section h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .summary-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .summary-column {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .bold {
+    font-weight: bold;
+  }
+  
+  .place-order-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+  }
+  
+  .place-order-btn:hover {
+    background-color: #218838;
+  }
+  
+  .place-order-btn:focus {
+    outline: none;
+  }
+  

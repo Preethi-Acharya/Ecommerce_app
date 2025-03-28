@@ -1,0 +1,253 @@
+/* CheckoutPage.scss */
+.cart-page {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .cart-page-left-section {
+    width: 60%;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .right-section {
+    width: 35%;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .bag-details {
+    margin-top: 20px;
+  }
+  
+  .bag-item {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr 1fr; /* 5 columns layout */
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+  }
+  
+  .bag-item .image img {
+    width: 100%;
+    height: auto;
+    max-width: 20%;
+    max-height: 20%;
+    object-fit: cover;
+  }
+  
+  .bag-item .title {
+    font-size: 14px;
+  }
+  
+  .bag-item .dropdown {
+    width: 100%;
+  }
+  
+  .remove-save-container {
+    grid-column: span 2; /* Merges the last two columns */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .remove-save {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+  }
+  
+  .remove-save svg {
+    color: #d9534f; /* Red color for trash icon */
+  }
+  
+  .remove-save span {
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .price {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  /* Right Section styles for order summary */
+  .right-section h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .summary-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .summary-column {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .bold {
+    font-weight: bold;
+  }
+  
+  .place-order-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+  }
+  
+  .place-order-btn:hover {
+    background-color: #218838;
+  }
+  
+  .place-order-btn:focus {
+    outline: none;
+  }
+
+  /* CheckoutPage.scss */
+
+/* Box for Pickup Options */
+.pickup-options-box {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space options evenly */
+    align-items: center; /* Vertically center the items */
+    gap: 10px; /* Add some space between the options */
+    padding: 10px;
+    background-color: #f2f2f2;
+    border-radius: 8px;
+    margin-top: 10px;
+  }
+  
+  .pickup-option {
+    flex: 1; /* Ensures each option takes equal space */
+    text-align: center; /* Center the text inside each option */
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #ddd; /* Add border for better visibility */
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer; /* Indicates the option is clickable */
+  }
+  
+  .pickup-option:hover {
+    background-color: #f9f9f9; /* Slight change in background color on hover */
+  }
+  
+  .pickup-option:first-child {
+    margin-left: 0; /* Removes left margin for the first item */
+  }
+  
+  .pickup-option:last-child {
+    margin-right: 0; /* Removes right margin for the last item */
+  }
+  
+/* CheckoutPage.scss */
+
+/* Dropdown Container */
+.dropdown {
+    width: 100%; /* Make sure it takes full width available */
+    margin-top: 10px; /* Add spacing on top of the dropdown */
+  }
+  
+  /* Styling the select element (Dropdown) */
+  .dropdown-select {
+    width: 100%; /* Make the select take the full width */
+    padding: 12px 20px; /* Add padding inside the dropdown */
+    font-size: 16px; /* Set a readable font size */
+    border: 1px solid #ccc; /* Light border for the dropdown */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #fff; /* White background */
+    color: #333; /* Dark text for better readability */
+    cursor: pointer; /* Indicate it's interactive */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transition effects for focus */
+  }
+  
+  /* Style for select element on focus */
+  .dropdown-select:focus {
+    outline: none; /* Remove default outline */
+    border-color: #007bff; /* Blue border color when focused */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add a soft blue glow */
+  }
+  
+  /* Styling the options inside the select dropdown */
+  .dropdown-select option {
+    padding: 10px; /* Add padding to each option */
+    font-size: 16px; /* Set font size for options */
+    background-color: #fff; /* White background for options */
+    color: #333; /* Dark text color */
+  }
+  
+  /* Option hover effect */
+  .dropdown-select option:hover {
+    background-color: #f8f9fa; /* Light grey background when hovering over an option */
+  }
+  
+  /* Option selected style */
+  .dropdown-select option:checked {
+    background-color: #007bff; /* Blue background for selected option */
+    color: white; /* White text color for selected option */
+  }
+
+  button {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s ease-in-out;
+    width: 100%; /* Make buttons take full width */
+    border: none; /* Remove default border */
+  }
+  
+  /* Styling for the Checkout button */
+  .checkout-btn {
+    background-color: #28a745; /* Green background for checkout */
+    color: white; /* White text color */
+    margin-bottom: 10px; /* Add some space below the button */
+  }
+  
+  .checkout-btn:hover {
+    background-color: #218838; /* Darker green on hover */
+    transform: scale(1.05); /* Slight scale effect for hover */
+  }
+  
+  .checkout-btn:focus {
+    outline: none; /* Remove outline on focus */
+  }
+  
+  /* Styling for the Add a Coupon Code button */
+  .coupon-btn {
+    background-color: #007bff; /* Blue background for coupon button */
+    color: white; /* White text color */
+  }
+  
+  .coupon-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slight scale effect for hover */
+  }
+  
+  .coupon-btn:focus {
+    outline: none; /* Remove outline on focus */
+  }
